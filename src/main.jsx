@@ -1,4 +1,5 @@
 import React from 'react'
+import Root from "./routes/root";
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
@@ -10,7 +11,7 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root />,
   },
 ]);
 
