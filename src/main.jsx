@@ -8,13 +8,31 @@ import {
 
 import './index.css'
 import ErrorPage from './error-page';
+import Product from './routes/product';
+import Products from './routes/products';
+
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage/>
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "products/:productId",
+        element: <Product/>,
+    
+      },
+      {
+        path: "/products",
+        element: <Products/> 
+      }
+
+    ]
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

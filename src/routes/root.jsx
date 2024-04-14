@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
  function Root() {
   return(
@@ -38,7 +39,8 @@ import React from "react";
     </div>
   </div>
 </header>
-    <footer><h1>THIS IS FOOTER</h1></footer>
+<Outlet/>
+    <footer><h1>  </h1></footer>
     </>
 
 
