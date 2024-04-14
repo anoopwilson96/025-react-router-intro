@@ -246,3 +246,11 @@ nav a {
   padding-right: 0.5rem;
   padding-bottom: 1rem;
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: chartreuse;
+}
